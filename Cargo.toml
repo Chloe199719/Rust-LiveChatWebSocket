@@ -8,6 +8,6 @@ edition = "2021"
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 tokio-stream = "0.1.1"
-warp = "0.3"
+warp = {version = "0.3", features = ["tls"] }
 futures-util = { version = "0.3", default-features = false, features = ["sink"] }
 pretty_env_logger = "0.5"
